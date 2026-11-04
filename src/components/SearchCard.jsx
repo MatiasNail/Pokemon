@@ -12,7 +12,6 @@ export default function SearchCard({ pokemon, cargando, error, onBuscar }) {
 
       <SearchForm
         nombreActual={pokemon?.name}
-        cargando={cargando}
         onBuscar={onBuscar}
       />
 

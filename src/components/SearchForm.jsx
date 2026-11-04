@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SearchForm({ nombreActual, cargando, onBuscar }) {
+export default function SearchForm({ nombreActual, onBuscar }) {
   const [busqueda, setBusqueda] = useState({
     nombreActual,
     valor: nombreActual || "",
@@ -36,7 +36,7 @@ export default function SearchForm({ nombreActual, cargando, onBuscar }) {
           setBusqueda({ nombreActual, valor: event.target.value })
         }
       />
-      <button type="submit" disabled={cargando}>
+      <button type="submit">
         Buscar Pokémon
       </button>
     </form>
